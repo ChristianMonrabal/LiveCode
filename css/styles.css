@@ -1,0 +1,110 @@
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.menu h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.menu p {
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.menu-options {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f4f4f4;
+}
+
+textarea {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    border: none;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+textarea::placeholder {
+    color: #999999;
+    font-style: italic;
+}
+
+textarea:focus {
+    background-color: #e9e9e9;
+}
+
+iframe, .output {
+    width: 50%;
+    height: 100%;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    textarea, iframe, .output {
+        width: 100%;
+        height: 50%;
+    }
+}
